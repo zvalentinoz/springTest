@@ -2,13 +2,13 @@
 <html xmlns:th="http://www.thymeleaf.org" lang="en">
 <head>
     <meta charset="UTF-8">
-    <title th:text="${title}}">Title</title>
+    <title th:text="${title}">Title</title>
 </head>
 <body>
 
 <div>
     <h4 th:text="${title}"></h4>
-    <a th:href="@{/users/}" th:text="'Volver'"></a>
+    <a th:href="@{/users}" th:text="'Volver'"></a>
 
     <form th:action="@{/users}" method="post" th:object="${user}" >
         <input type="hidden" th:field="*{id}">
